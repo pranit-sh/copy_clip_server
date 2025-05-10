@@ -9,14 +9,7 @@
     "start": "node dist/index.js",
     "lint": "eslint \"./src/**/*.ts\"",
     "lint-fix": "eslint \"./src/**/*.ts\" --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "prepare": "test \"$NODE_ENV\" != \"production\" && husky install"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "keywords": [],
   "author": "",
@@ -34,8 +27,6 @@
     "@eslint/js": "^9.26.0",
     "@types/node": "^22.15.17",
     "eslint": "^9.26.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
     "prettier": "^3.5.3",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
