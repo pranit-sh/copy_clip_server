@@ -5,7 +5,7 @@ interface GenerateNotesBody {
   text: string;
 }
 
-export default async function notesRoutes(fastify: FastifyInstance) {
+export async function notesRoutes(fastify: FastifyInstance) {
   fastify.post<{ Body: GenerateNotesBody }>(
     '/generate/notes',
     {

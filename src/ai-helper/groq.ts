@@ -1,13 +1,13 @@
 import Groq from 'groq-sdk';
-import * as dotenv from 'dotenv';
+// import * as dotenv from 'dotenv';
 import { GROQ_MODEL, TEMPERATURE } from './groq-params';
 import { ChatCompletionMessageParam } from 'groq-sdk/resources/chat/completions';
 
-const result = dotenv.config();
+// const result = dotenv.config();
 
-if (result.error) {
-  throw result.error;
-}
+// if (result.error) {
+//   throw result.error;
+// }
 
 if (!process.env.GROQ_API_KEY) {
   throw new Error('GROQ_API_KEY is not defined in the environment variables.');
