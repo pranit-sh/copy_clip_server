@@ -2,8 +2,8 @@ import Fastify from 'fastify';
 import dotenv from 'dotenv';
 import cors from '@fastify/cors';
 import helmet from '@fastify/helmet';
-import clipsRoutes from './routes/generate/clips';
-import notesRoutes from './routes/generate/notes';
+import { clipsRoutes } from './routes/generate/clips';
+import { notesRoutes } from './routes/generate/notes';
 
 // Load environment variables
 dotenv.config();

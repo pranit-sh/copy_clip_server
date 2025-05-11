@@ -5,7 +5,7 @@ interface GenerateClipsBody {
   text: string;
 }
 
-export default async function clipsRoutes(fastify: FastifyInstance) {
+export async function clipsRoutes(fastify: FastifyInstance) {
   fastify.post<{ Body: GenerateClipsBody }>(
     '/generate/clips',
     {
