@@ -8,7 +8,6 @@ export const generateClipsFromText = async (text: string): Promise<ClipDto[]> =>
     clips: z.array(
       z.object({
         text: z.string(),
-        title: z.string(),
       }),
     ),
   });
@@ -20,8 +19,7 @@ export const generateClipsFromText = async (text: string): Promise<ClipDto[]> =>
     {
       "clips": [
         {
-          "text": "<the text>",
-          "title": "<a short title for the text>"
+          "text": "<the text>"
         }
       ]
     }
@@ -60,7 +58,7 @@ export const generateNotesFromText = async (text: string): Promise<NoteDto> => {
     Return the output strictly as a JSON object in the following format:
     {
       "text": "<the summarized text>",
-      "title": "<a short title for the summary>"
+      "title": "<a very short title for the summary>"
     }`;
 
   const user_prompt = `Summarize the following text and provide a title: 
